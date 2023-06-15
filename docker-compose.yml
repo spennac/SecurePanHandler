@@ -25,7 +25,7 @@ services:
    container_name: nginx
    restart: on-failure
    ports:
-    - "4433:443"
+    - "9999:443"
    volumes:
      - "./conf.d:/etc/nginx/conf.d"
    networks:
