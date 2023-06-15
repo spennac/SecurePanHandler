@@ -12,8 +12,8 @@ services:
     container_name: panhandler
     restart: on-failure
     environment:
-      - CNC_USERNAME=tobias
-      - CNC_PASSWORD=panme
+      - CNC_USERNAME=admin
+      - CNC_PASSWORD=paloalto
     volumes:
       - "user-dir:/home/cnc_user"
       - "/var/run/docker.sock:/var/run/docker.sock"
