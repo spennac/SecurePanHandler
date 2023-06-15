@@ -1,6 +1,10 @@
 # SecurePanHandler
 Panhandler over TLS
 
+Install Panhandler on the host
+
+```curl -s -k -L https://raw.githubusercontent.com/PaloAltoNetworks/panhandler/master/ph | bash```
+
 To use SecurePanHandler, create a TLS keypair in the ./conf.d/ directory named `server.key` and `server.crt`.
 
 ```openssl req -x509 -newkey rsa:2048 -nodes -keyout conf.d/server.key -out conf.d/server.crt -days 365```
